@@ -1,0 +1,11 @@
+@mixin vh-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fontSize-lineHeight-marginBottom($fontSize,$lineHeight,$marginBottom:0) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin-bottom: $marginBottom;
+}

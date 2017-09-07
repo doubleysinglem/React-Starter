@@ -1,0 +1,23 @@
+@import "./mixin";
+@import "./color";
+@import "./reset";
+
+.hide {
+  display: none !important;
+}
+
+.whiteBox {
+  background: #FFFFFF;
+  padding: 25px;
+  margin: 10px 15px;
+  &__title {
+    @include fontSize-lineHeight-marginBottom(16px, 30px, 20px);
+    font-weight: bold;
+  }
+  &__wrapper {
+    margin: -10px -15px;
+  }
+}
+
+
+

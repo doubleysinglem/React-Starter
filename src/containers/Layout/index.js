@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Link}from 'react-router-dom'
+import {NavLink}from 'react-router-dom'
 
 class Layout extends Component {
     render() {
         return (
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/test">Test</Link></li>
+                    <li><NavLink to="/" exact activeStyle={{fontWeight:'bold'}}>Home</NavLink></li>
+                    <li><NavLink to="/test" activeStyle={{fontWeight:'bold'}}>Test</NavLink></li>
                 </ul>
             </div>
         );
